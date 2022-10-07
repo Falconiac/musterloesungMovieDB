@@ -2,7 +2,7 @@ name: Deploy to Heroku
 on:
   push:
     branches:
-      -master
+      - master
 
 jobs:
   build-frontend:
@@ -18,8 +18,9 @@ jobs:
           npm install
           npm run build
       - uses: actions/upload-artifact@v2
-        with: frontend-build
-        path: frontend/build/
+        with:
+          name: frontend-build
+          path: frontend/build/
 
   build-backend:
     runs-on: ubuntu-latest
