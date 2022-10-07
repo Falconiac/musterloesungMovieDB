@@ -39,7 +39,7 @@ on:
         - uses: actions/upload-artifact@v2
           with:
             name: backend-build
-            path: backend/target/musterloesungMovieDB.jar
+            path: backend/target/moviedb.jar
 
     deploy:
       runs-on: ubuntu-latest
