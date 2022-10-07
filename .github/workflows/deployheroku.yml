@@ -17,7 +17,7 @@ on:
             cd frontend
             npm install
             npm run build
-        - uses: action/upload-artifact@v2
+        - uses: actions/upload-artifact@v2
           with: frontend-build
           path: frontend/build/
 
